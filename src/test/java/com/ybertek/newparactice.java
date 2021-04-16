@@ -27,7 +27,7 @@ public class newparactice {
         System.out.println(resultSet.getString("first_name"));
         System.out.println(resultSet.getRow());
 //resultSet.beforeFirst();
-        //while (resultSet.next()) {
+       // while (resultSet.next()) {
         // System.out.println(resultSet.getRow() + "-" + resultSet.getString("first_name") + "-" +
         //resultSet.getString(1));
 

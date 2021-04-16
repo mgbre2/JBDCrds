@@ -7,6 +7,7 @@ import java.sql.SQLException;
 
 public class JDBCday2 {
 
+
     String name = "SdetUserAuto";
     String lastName = "AutoLastName";
 

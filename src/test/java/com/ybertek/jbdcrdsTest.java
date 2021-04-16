@@ -44,7 +44,7 @@ public class jbdcrdsTest {
         ResultSet resultSet = statement.executeQuery("SELECT * FROM locations;");
         //next() method returns boolean, so we can get value based on the column name
         while (resultSet.next()) {
-            System.out.println(resultSet.getRow() + " :: " + resultSet.getObject("city"));
+            System.out.println(resultSet.getObject("city"));
         }
         //go to first row
         resultSet.first();
@@ -62,7 +62,7 @@ public class jbdcrdsTest {
         //we are getting first record based on the column name
         String value = resultSet.getString("city");
         //just to output result into terminal
-        System.out.println(value);
+        System.out.println("value = "+ value);
         //if we are calling this method, it will move out of the list of records. Once we will try to get a data, we will get an exception
         //resultSet.afterLast();
         //last method moves to the end and we can get data of last record
